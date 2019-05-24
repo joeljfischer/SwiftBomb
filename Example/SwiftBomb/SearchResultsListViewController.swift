@@ -21,7 +21,7 @@ class SearchResultsListViewController: UIViewController, UITableViewDelegate, UI
         
         super.viewDidLoad()
         
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
     }
     
@@ -43,7 +43,7 @@ class SearchResultsListViewController: UIViewController, UITableViewDelegate, UI
         UIApplication.shared.isNetworkActivityIndicatorVisible = loading
         
         if loading {
-            let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+            let activityIndicator = UIActivityIndicatorView(style: .gray)
             var indicatorFrame = activityIndicator.frame
             indicatorFrame.size.height += 50
             activityIndicator.frame = indicatorFrame

@@ -42,7 +42,7 @@ class ResourcesListViewController: UIViewController, UITableViewDelegate, UITabl
         
         super.viewDidLoad()
         
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
         
         loadMoreResources()
@@ -93,7 +93,7 @@ class ResourcesListViewController: UIViewController, UITableViewDelegate, UITabl
         UIApplication.shared.isNetworkActivityIndicatorVisible = loading
         
         if loading {
-            let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+            let activityIndicator = UIActivityIndicatorView(style: .gray)
             var indicatorFrame = activityIndicator.frame
             indicatorFrame.size.height += 50
             activityIndicator.frame = indicatorFrame

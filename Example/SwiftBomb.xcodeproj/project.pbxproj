@@ -27,12 +27,6 @@
 		5229CCD41CD7B836008A13BE /* ResourcesMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCCE1CD7B836008A13BE /* ResourcesMenuViewController.swift */; };
 		5229CCD51CD7B836008A13BE /* ResourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCCF1CD7B836008A13BE /* ResourceTableViewCell.swift */; };
 		5229CCD61CD7B836008A13BE /* SearchResultsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCD01CD7B836008A13BE /* SearchResultsListViewController.swift */; };
-		5229CCE21CD7C7F0008A13BE /* Diskcached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCDB1CD7C7F0008A13BE /* Diskcached.swift */; };
-		5229CCE31CD7C7F0008A13BE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCDD1CD7C7F0008A13BE /* ImageLoader.swift */; };
-		5229CCE41CD7C7F0008A13BE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5229CCDE1CD7C7F0008A13BE /* Info.plist */; };
-		5229CCE51CD7C7F0008A13BE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCDF1CD7C7F0008A13BE /* Manager.swift */; };
-		5229CCE61CD7C7F0008A13BE /* UIImage+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCE01CD7C7F0008A13BE /* UIImage+ImageLoader.swift */; };
-		5229CCE71CD7C7F0008A13BE /* UIImageView+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCE11CD7C7F0008A13BE /* UIImageView+ImageLoader.swift */; };
 		5229CCEA1CD7D6AC008A13BE /* AccessoryResourcePaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCE91CD7D6AC008A13BE /* AccessoryResourcePaginator.swift */; };
 		5229CCED1CD7D7D6008A13BE /* AccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCEB1CD7D7D6008A13BE /* AccessoryViewController.swift */; };
 		5229CCEE1CD7D7D6008A13BE /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229CCEC1CD7D7D6008A13BE /* CharacterViewController.swift */; };
@@ -50,6 +44,18 @@
 		52C6EFEE1CDE69A900394296 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6EFED1CDE69A900394296 /* LocationViewController.swift */; };
 		52C6EFF01CDE840B00394296 /* ObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6EFEF1CDE840B00394296 /* ObjectViewController.swift */; };
 		52C6EFF21CDE881E00394296 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6EFF11CDE881E00394296 /* VideoViewController.swift */; };
+		5D889ED42298477F00679227 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889EC52298477F00679227 /* Disk.swift */; };
+		5D889ED52298477F00679227 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889EC62298477F00679227 /* ImageLoader.swift */; };
+		5D889ED62298477F00679227 /* HashStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889EC72298477F00679227 /* HashStorage.swift */; };
+		5D889ED72298477F00679227 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889EC82298477F00679227 /* Option.swift */; };
+		5D889ED82298477F00679227 /* URLLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889EC92298477F00679227 /* URLLiteralConvertible.swift */; };
+		5D889ED92298477F00679227 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889ECA2298477F00679227 /* Loader.swift */; };
+		5D889EDA2298477F00679227 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889ECB2298477F00679227 /* Loadable.swift */; };
+		5D889EDB2298477F00679227 /* Operative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889ECC2298477F00679227 /* Operative.swift */; };
+		5D889EDC2298477F00679227 /* UIImage+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889ECE2298477F00679227 /* UIImage+ImageLoader.swift */; };
+		5D889EDD2298477F00679227 /* UIImageView+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889ECF2298477F00679227 /* UIImageView+ImageLoader.swift */; };
+		5D889EDE2298477F00679227 /* CGImageSource+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889ED02298477F00679227 /* CGImageSource+ImageLoader.swift */; };
+		5D889EDF2298477F00679227 /* Data+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D889ED12298477F00679227 /* Data+ImageLoader.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -84,13 +90,6 @@
 		5229CCCE1CD7B836008A13BE /* ResourcesMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesMenuViewController.swift; sourceTree = "<group>"; };
 		5229CCCF1CD7B836008A13BE /* ResourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceTableViewCell.swift; sourceTree = "<group>"; };
 		5229CCD01CD7B836008A13BE /* SearchResultsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsListViewController.swift; sourceTree = "<group>"; };
-		5229CCDB1CD7C7F0008A13BE /* Diskcached.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diskcached.swift; sourceTree = "<group>"; };
-		5229CCDC1CD7C7F0008A13BE /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoader.h; sourceTree = "<group>"; };
-		5229CCDD1CD7C7F0008A13BE /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		5229CCDE1CD7C7F0008A13BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5229CCDF1CD7C7F0008A13BE /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		5229CCE01CD7C7F0008A13BE /* UIImage+ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageLoader.swift"; sourceTree = "<group>"; };
-		5229CCE11CD7C7F0008A13BE /* UIImageView+ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageLoader.swift"; sourceTree = "<group>"; };
 		5229CCE91CD7D6AC008A13BE /* AccessoryResourcePaginator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryResourcePaginator.swift; sourceTree = "<group>"; };
 		5229CCEB1CD7D7D6008A13BE /* AccessoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryViewController.swift; sourceTree = "<group>"; };
 		5229CCEC1CD7D7D6008A13BE /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +111,18 @@
 		52C6EFED1CDE69A900394296 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		52C6EFEF1CDE840B00394296 /* ObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectViewController.swift; sourceTree = "<group>"; };
 		52C6EFF11CDE881E00394296 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		5D889EC52298477F00679227 /* Disk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
+		5D889EC62298477F00679227 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		5D889EC72298477F00679227 /* HashStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashStorage.swift; sourceTree = "<group>"; };
+		5D889EC82298477F00679227 /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		5D889EC92298477F00679227 /* URLLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLLiteralConvertible.swift; sourceTree = "<group>"; };
+		5D889ECA2298477F00679227 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		5D889ECB2298477F00679227 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		5D889ECC2298477F00679227 /* Operative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operative.swift; sourceTree = "<group>"; };
+		5D889ECE2298477F00679227 /* UIImage+ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageLoader.swift"; sourceTree = "<group>"; };
+		5D889ECF2298477F00679227 /* UIImageView+ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageLoader.swift"; sourceTree = "<group>"; };
+		5D889ED02298477F00679227 /* CGImageSource+ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImageSource+ImageLoader.swift"; sourceTree = "<group>"; };
+		5D889ED12298477F00679227 /* Data+ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+ImageLoader.swift"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftBomb_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBomb_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,20 +189,6 @@
 			path = DataProviders;
 			sourceTree = "<group>";
 		};
-		5229CCDA1CD7C7D5008A13BE /* ImageLoader */ = {
-			isa = PBXGroup;
-			children = (
-				5229CCDB1CD7C7F0008A13BE /* Diskcached.swift */,
-				5229CCDC1CD7C7F0008A13BE /* ImageLoader.h */,
-				5229CCDD1CD7C7F0008A13BE /* ImageLoader.swift */,
-				5229CCDE1CD7C7F0008A13BE /* Info.plist */,
-				5229CCDF1CD7C7F0008A13BE /* Manager.swift */,
-				5229CCE01CD7C7F0008A13BE /* UIImage+ImageLoader.swift */,
-				5229CCE11CD7C7F0008A13BE /* UIImageView+ImageLoader.swift */,
-			);
-			path = ImageLoader;
-			sourceTree = "<group>";
-		};
 		5229CCE81CD7D68D008A13BE /* DetailViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +227,41 @@
 			path = MockData;
 			sourceTree = "<group>";
 		};
+		5D889EC32298477F00679227 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				5D889EC42298477F00679227 /* Core */,
+				5D889ECD2298477F00679227 /* Extension */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		5D889EC42298477F00679227 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5D889EC52298477F00679227 /* Disk.swift */,
+				5D889EC62298477F00679227 /* ImageLoader.swift */,
+				5D889EC72298477F00679227 /* HashStorage.swift */,
+				5D889EC82298477F00679227 /* Option.swift */,
+				5D889EC92298477F00679227 /* URLLiteralConvertible.swift */,
+				5D889ECA2298477F00679227 /* Loader.swift */,
+				5D889ECB2298477F00679227 /* Loadable.swift */,
+				5D889ECC2298477F00679227 /* Operative.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5D889ECD2298477F00679227 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5D889ECE2298477F00679227 /* UIImage+ImageLoader.swift */,
+				5D889ECF2298477F00679227 /* UIImageView+ImageLoader.swift */,
+				5D889ED02298477F00679227 /* CGImageSource+ImageLoader.swift */,
+				5D889ED12298477F00679227 /* Data+ImageLoader.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -254,7 +286,7 @@
 		607FACD21AFB9204008FA782 /* Example for SwiftBomb */ = {
 			isa = PBXGroup;
 			children = (
-				5229CCDA1CD7C7D5008A13BE /* ImageLoader */,
+				5D889EC32298477F00679227 /* ImageLoader */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				5229CCB41CD7B302008A13BE /* DataProviders */,
 				5229CCE81CD7D68D008A13BE /* DetailViewControllers */,
@@ -411,7 +443,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5229CCE41CD7C7F0008A13BE /* Info.plist in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -528,24 +559,28 @@
 			files = (
 				529EEE751CDFC9D300D7A981 /* PlatformResourcePaginator.swift in Sources */,
 				52C6EFE41CDE135200394296 /* DetailWebViewController.swift in Sources */,
-				5229CCE61CD7C7F0008A13BE /* UIImage+ImageLoader.swift in Sources */,
+				5D889EDC2298477F00679227 /* UIImage+ImageLoader.swift in Sources */,
+				5D889ED72298477F00679227 /* Option.swift in Sources */,
 				52C6EFEA1CDE5F7900394296 /* ConceptViewController.swift in Sources */,
 				5229CCC61CD7B34C008A13BE /* GenreResourcePaginator.swift in Sources */,
 				52C6EFEC1CDE665900394296 /* GenreViewController.swift in Sources */,
-				5229CCE31CD7C7F0008A13BE /* ImageLoader.swift in Sources */,
-				5229CCE71CD7C7F0008A13BE /* UIImageView+ImageLoader.swift in Sources */,
+				5D889ED52298477F00679227 /* ImageLoader.swift in Sources */,
 				5229CCCA1CD7B34C008A13BE /* VideoResourcePaginator.swift in Sources */,
 				52C6EFF21CDE881E00394296 /* VideoViewController.swift in Sources */,
-				5229CCE51CD7C7F0008A13BE /* Manager.swift in Sources */,
 				5229CCC31CD7B34C008A13BE /* ConceptResourcePaginator.swift in Sources */,
 				5229CCC21CD7B34C008A13BE /* CompanyResourcePaginator.swift in Sources */,
+				5D889EDA2298477F00679227 /* Loadable.swift in Sources */,
 				5229CCEE1CD7D7D6008A13BE /* CharacterViewController.swift in Sources */,
 				5229CCD31CD7B836008A13BE /* ResourcesListViewController.swift in Sources */,
 				52C6EFDB1CDDD8FD00394296 /* CompanyViewController.swift in Sources */,
 				5229CCC91CD7B34C008A13BE /* PersonResourcePaginator.swift in Sources */,
+				5D889EDF2298477F00679227 /* Data+ImageLoader.swift in Sources */,
 				5229CCEA1CD7D6AC008A13BE /* AccessoryResourcePaginator.swift in Sources */,
 				52C6EFDD1CDDE4B700394296 /* GameViewController.swift in Sources */,
 				529EEE731CDFC95300D7A981 /* PlatformViewController.swift in Sources */,
+				5D889ED42298477F00679227 /* Disk.swift in Sources */,
+				5D889EDB2298477F00679227 /* Operative.swift in Sources */,
+				5D889EDD2298477F00679227 /* UIImageView+ImageLoader.swift in Sources */,
 				5229CCD61CD7B836008A13BE /* SearchResultsListViewController.swift in Sources */,
 				5229CCD51CD7B836008A13BE /* ResourceTableViewCell.swift in Sources */,
 				5229CCED1CD7D7D6008A13BE /* AccessoryViewController.swift in Sources */,
@@ -553,6 +588,7 @@
 				52C6EFE61CDE2C2000394296 /* FranchiseViewController.swift in Sources */,
 				5229CCC41CD7B34C008A13BE /* FranchiseResourcePaginator.swift in Sources */,
 				5229CCC81CD7B34C008A13BE /* ObjectResourcePaginator.swift in Sources */,
+				5D889ED62298477F00679227 /* HashStorage.swift in Sources */,
 				52C6EFF01CDE840B00394296 /* ObjectViewController.swift in Sources */,
 				5229CCD41CD7B836008A13BE /* ResourcesMenuViewController.swift in Sources */,
 				5229CCC71CD7B34C008A13BE /* LocationResourcePaginator.swift in Sources */,
@@ -560,8 +596,10 @@
 				52C6EFE81CDE378C00394296 /* PersonViewController.swift in Sources */,
 				5229CCC51CD7B34C008A13BE /* GameResourcePaginator.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				5D889ED92298477F00679227 /* Loader.swift in Sources */,
+				5D889EDE2298477F00679227 /* CGImageSource+ImageLoader.swift in Sources */,
 				5229CCC01CD7B34C008A13BE /* CharactersResourcePaginator.swift in Sources */,
-				5229CCE21CD7C7F0008A13BE /* Diskcached.swift in Sources */,
+				5D889ED82298477F00679227 /* URLLiteralConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,7 +762,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -740,7 +778,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -761,7 +799,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -778,7 +816,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

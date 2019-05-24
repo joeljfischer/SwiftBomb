@@ -18,7 +18,7 @@ class BaseResourceDetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 50
 
         dateFormatter.dateStyle = .medium
@@ -51,6 +51,6 @@ class BaseResourceDetailViewController: UITableViewController {
     func updateInfo(_ info: inout NSMutableAttributedString, label: String, value: String) {
         
         info.mutableString.append("\(label) \(value)\n")
-        info.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFont(ofSize: 17), range: info.mutableString.range(of: label))
+        info.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 17), range: info.mutableString.range(of: label))
     }
 }
