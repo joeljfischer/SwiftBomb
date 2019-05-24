@@ -85,7 +85,7 @@ final public class ObjectResource: ResourceUpdating {
     
     /// Pretty description of the object.
     public var prettyDescription: String {
-        return name ?? "Character \(id)"
+        return name ?? "Character \(id!)"
     }
 }
 

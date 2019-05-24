@@ -107,6 +107,6 @@ final public class PlatformResource: ResourceUpdating {
     
     /// Pretty description of the platform.
     public var prettyDescription: String {
-        return name ?? "Platform \(id)"
+        return name ?? "Platform \(id!)"
     }
 }

@@ -136,7 +136,7 @@ final public class GameReleaseResource: ResourceUpdating {
     
     /// Pretty description of the release.
     public var prettyDescription: String {
-        return name ?? "Release \(id)"
+        return name ?? "Release \(id!)"
     }
 }
 

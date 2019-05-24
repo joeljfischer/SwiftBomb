@@ -110,7 +110,7 @@ final public class PersonResource: ResourceUpdating {
     
     /// Pretty description of the person.
     public var prettyDescription: String {
-        return name ?? "Person \(id)"
+        return name ?? "Person \(id!)"
     }
 }
 

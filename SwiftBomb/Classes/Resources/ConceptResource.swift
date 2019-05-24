@@ -92,7 +92,7 @@ final public class ConceptResource: ResourceUpdating {
     
     /// Pretty description of the concept.
     public var prettyDescription: String {
-        return name ?? "Concept \(id)"
+        return name ?? "Concept \(id!)"
     }
 }
 
@@ -100,7 +100,6 @@ final public class ConceptResource: ResourceUpdating {
  Struct containing extended information for `ConceptResource`s. To retrieve, call `fetchExtendedInfo(_:)` upon the original resource then access the data on the resource's `extendedInfo` property.
  */
 public struct ConceptExtendedInfo: ResourceExtendedInfo {
-    
     /// Characters related to the concept.
     public fileprivate(set) var characters: [CharacterResource]?
     

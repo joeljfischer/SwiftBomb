@@ -77,7 +77,7 @@ final public class FranchiseResource: ResourceUpdating {
     
     /// Pretty description of the franchise.
     public var prettyDescription: String {
-        return name ?? "Franchise \(id)"
+        return name ?? "Franchise \(id!)"
     }
 }
 

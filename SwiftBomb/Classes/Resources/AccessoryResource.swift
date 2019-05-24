@@ -75,6 +75,6 @@ final public class AccessoryResource: ResourceUpdating {
     
     /// Pretty description of the accessory.
     public var prettyDescription: String {
-        return name ?? "Accessory \(id)"
+        return name ?? "Accessory \(id!)"
     }
 }

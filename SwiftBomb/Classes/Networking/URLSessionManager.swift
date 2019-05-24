@@ -107,17 +107,16 @@ class URLSessionManager: NetworkingManager {
         }
         
         let task = urlSession.dataTask(with: urlRequest, completionHandler: { [weak self] responseData, urlResponse, error in
-            
             if let error = error {
-                
                 self?.handleRequestCompletion(request: urlRequest, result: .error(.networkError(error as NSError?)), completion: completion)
                 return
             }
             
             if request.responseFormat == .json {
-                
                 if (self?.configuration.loggingLevel == .requestsAndResponses) {
-                    print("Response: \(urlResponse)")
+                    if let response = urlResponse {
+                        print("Response: \(response)")
+                    }
                 }
                 
                 do {

@@ -85,6 +85,6 @@ final public class LocationResource: ResourceUpdating {
     
     /// Pretty description of the location.
     public var prettyDescription: String {
-        return name ?? "Location \(id)"
+        return name ?? "Location \(id!)"
     }
 }

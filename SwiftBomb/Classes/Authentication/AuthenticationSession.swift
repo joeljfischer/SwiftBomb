@@ -61,7 +61,7 @@ class AuthenticationSession {
                     
                     self.apiKeyPollingTimer = Timer.scheduledTimer(timeInterval: (self.apiPollingDirective?.retryInterval)!, target: self, selector: #selector(AuthenticationSession.pollAPIKeyEndpoint), userInfo: nil, repeats: true)
                     self.apiKeyPollingTimer?.tolerance = 5
-                    RunLoop.main.add(self.apiKeyPollingTimer!, forMode: RunLoopMode.defaultRunLoopMode)
+                    RunLoop.main.add(self.apiKeyPollingTimer!, forMode: RunLoop.Mode.default)
                 }
                 
             case .error:

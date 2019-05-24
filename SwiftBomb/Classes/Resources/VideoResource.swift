@@ -97,6 +97,6 @@ final public class VideoResource: ResourceUpdating {
     
     /// Pretty description of the video.
     public var prettyDescription: String {
-        return name ?? "Video \(id)"
+        return name ?? "Video \(id!)"
     }
 }

@@ -109,7 +109,7 @@ final public class CompanyResource: ResourceUpdating {
     
     /// Pretty description of the company.
     public var prettyDescription: String {
-        return name ?? "Company \(id)"
+        return name ?? "Company \(id!)"
     }
 }
 

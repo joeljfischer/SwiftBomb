@@ -110,7 +110,7 @@ final public class GameResource: ResourceUpdating {
     
     /// Pretty description of the game.
     public var prettyDescription: String {
-        return name ?? "Game \(id)"
+        return name ?? "Game \(id!)"
     }
 }
 

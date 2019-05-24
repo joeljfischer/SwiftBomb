@@ -74,6 +74,6 @@ final public class GenreResource: ResourceUpdating {
     
     /// Pretty description of the genre.
     public var prettyDescription: String {
-        return name ?? "Genre \(id)"
+        return name ?? "Genre \(id!)"
     }
 }

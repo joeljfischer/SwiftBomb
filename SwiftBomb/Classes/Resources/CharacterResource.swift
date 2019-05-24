@@ -106,7 +106,7 @@ final public class CharacterResource: ResourceUpdating {
     
     /// Pretty description of the character.
     public var prettyDescription: String {
-        return name ?? "Character \(id)"
+        return name ?? "Character \(id!)"
     }
 }
 
