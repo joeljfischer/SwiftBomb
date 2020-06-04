@@ -18,7 +18,7 @@ final public class GameResource: ResourceUpdating {
     /// The resource type.
     public let resourceType = ResourceType.game
 
-    public fileprivate(set) var rawJSON: [String: AnyObject]?
+    public fileprivate(set) var rawJSON: [String : AnyObject]?
     
     /// Array of aliases the game is known by.
     public fileprivate(set) var aliases: [String]?
@@ -121,7 +121,7 @@ final public class GameResource: ResourceUpdating {
  */
 public struct GameExtendedInfo: ResourceExtendedInfo {
 
-    public fileprivate(set) var rawJSON: [String: AnyObject]?
+    public fileprivate(set) var rawJSON: [String : AnyObject]?
     
     /// Characters related to the game.
     public fileprivate(set) var characters: [CharacterResource]?
