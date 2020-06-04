@@ -17,6 +17,8 @@ final public class GameResource: ResourceUpdating {
     
     /// The resource type.
     public let resourceType = ResourceType.game
+
+    public fileprivate(set) var rawJSON: [String: AnyObject]?
     
     /// Array of aliases the game is known by.
     public fileprivate(set) var aliases: [String]?
@@ -71,13 +73,13 @@ final public class GameResource: ResourceUpdating {
     
     /// Used to create a `GameResource` from JSON.
     public init(json: [String : AnyObject]) {
-        
         id = json["id"] as? Int
 
         update(json: json)
     }
     
     func update(json: [String : AnyObject]) {
+        rawJSON = json
         
         aliases = (json["aliases"] as? String)?.newlineSeparatedStrings() ?? aliases
         api_detail_url = (json["api_detail_url"] as? String)?.url() as URL?? ?? api_detail_url
@@ -118,6 +120,8 @@ final public class GameResource: ResourceUpdating {
  Struct containing extended information for `GameResource`s. To retrieve, call `fetchExtendedInfo(_:)` upon the original resource then access the data on the resource's `extendedInfo` property.
  */
 public struct GameExtendedInfo: ResourceExtendedInfo {
+
+    public fileprivate(set) var rawJSON: [String: AnyObject]?
     
     /// Characters related to the game.
     public fileprivate(set) var characters: [CharacterResource]?
@@ -196,6 +200,7 @@ public struct GameExtendedInfo: ResourceExtendedInfo {
     
     /// A method used for updating structs. Usually after further requests for more field data.
     public mutating func update(_ json: [String : AnyObject]) {
+        rawJSON = json
         
         characters = json.jsonMappedResources("characters") ?? characters
         concepts = json.jsonMappedResources("concepts") ?? concepts
